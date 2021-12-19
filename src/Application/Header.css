@@ -1,0 +1,192 @@
+.Background {
+    /* background: url("Images/bg-desktop-dark.jpg") no-repeat; */
+    background-size: cover;
+    width: 100%;
+    height: 16rem;
+}
+.Todocontainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 39%;
+    margin: -14.5% auto 0 auto;
+}
+.Header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.Header h1 {
+    color: white;
+    letter-spacing: 1rem;
+}
+
+.Header img {
+    cursor: pointer;
+    height: 4%;
+    width: 4%;
+}
+.Moon{
+    margin-left: -58%;
+}
+.Inputbox{
+
+}
+.Input{
+    margin-top: 0%;
+    width: 83%;
+    height: 50px;
+    background-color: hsl(235, 21%, 11%);
+    color: lightblue;
+    border: none;
+    font-size: 18px;
+}
+.Submit{
+    height: 50px;
+    cursor: pointer;
+    background-color: hsl(235, 21%, 11%);
+    color: gray;
+    border: none;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 18px;
+}
+
+
+.entry{
+    margin-top: 5%;
+    display: grid;
+    margin-left: -3%;
+    place-content: center;
+    height:100%;
+}
+.entry ol li{
+    width: 490px;  
+    padding:10px 10px;
+    border-bottom: 1px solid lightgray;
+    background-color: hsl(235, 21%, 11%);
+    color: white;
+
+}
+   
+.list input{
+    margin-right: 5%;
+    color: white;
+}
+   
+.function{
+    position: absolute;
+    background-color:hsl(235, 21%, 11%) ;
+    font-size:larger;
+    margin-top: 5%;
+    width: 38%;
+    left: 31%;
+}
+.function span{
+    padding-left: 7%;
+    font-size: 15px;
+    cursor: pointer;
+    color: gray;
+}
+.hover:hover{
+    color: white;
+} 
+input:checked + li{
+    text-decoration: line-through;
+    border-radius: 50%;
+}
+ol li span{
+    float: right;
+}
+
+
+@media only screen and (max-width:700px) and (min-width:200px) {
+
+    .Background {
+        /* background: url("Images/bg-desktop-dark.jpg") no-repeat; */
+        background-size: inherit;
+        width: 10%;
+        height: 10rem;
+    }
+
+    .Header h1 {
+        color: white;
+        letter-spacing: 0.5rem;
+        font-size: 125%;
+        margin-left: 5%;
+        margin-top: -40%;
+    }
+    .Sun{
+        margin-top: -40%;
+
+    }
+    .Todocontainer{
+        display: inherit;
+        justify-content: inherit;
+        flex-direction: column;
+        width: inherit;
+        margin:inherit;
+    }
+    .Input{
+        margin-top: 0%;
+        margin-left: 5%;
+        width: 70%;
+        height: 25px;
+        background-color: hsl(235, 21%, 11%);
+        color: lightblue;
+        border: none;
+        font-size: 18px;
+    }
+    .Submit{
+        height: 25px;
+        cursor: pointer;
+        background-color: hsl(235, 21%, 11%);
+        color: gray;
+        border: none;
+        padding-left: 2%;
+        padding-right: 2%;
+        font-size: 18px;
+    }
+
+    .entry{
+        margin-top: 5%;
+        display: grid;
+        height:100%;
+    }
+    .entry ol li{
+        width: 290px;  
+        padding:10px 10px;
+        border-bottom: 1px solid lightgray;
+        background-color: hsl(235, 21%, 11%);
+        color: white;
+    
+    }
+       
+    .list input{
+        margin-right: 5%;
+        color: white;
+    }
+       
+    .function{
+        position: absolute;
+        background-color:hsl(235, 21%, 11%) ;
+        font-size:larger;
+        margin-top: 5%;
+        width: 100%;
+        left: 0%;
+    }
+    .function span{
+        padding-left: 2%;
+        font-size: 15px;
+        cursor: pointer;
+        color: gray;
+    }
+    .hover:hover{
+        color: white;
+    } 
+    input:checked + li{
+        text-decoration: line-through;
+    }
+}
