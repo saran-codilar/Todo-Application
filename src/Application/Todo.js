@@ -100,11 +100,6 @@ function Todo() {
             });
             setItems(updatedItems);  
     }
-
-    const completed=()=>{
-    
-  
-    }
     
 
     return (
@@ -142,7 +137,7 @@ function Todo() {
                 <span className="hover">Items Left</span>
                 <span className="hover">All</span>
                 <span className="hover">Active</span>
-                <span className="hover" onClick={completed}>Completed</span>
+                <span className="hover">Completed</span>
                 <span className="hover">Clear Completed</span>
             </div>
 
