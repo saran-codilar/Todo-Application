@@ -4,15 +4,6 @@ import Moon from './icon-moon.svg';
 import Dark from './bg-desktop-dark.jpg'
 import './Header.css';
 
-const getLocalItems = () => {
-    let lists = localStorage.getItem('list');
-    if (lists) {
-        return JSON.parse(localStorage.getItem('list'));
-    } else {
-        return [];
-    }
-}
-
 function Todo() {
 
 
@@ -55,6 +46,14 @@ function Todo() {
         // }
     }
 
+const getLocalItems = () => {
+    let lists = localStorage.getItem('list');
+    if (lists) {
+        return JSON.parse(localStorage.getItem('list'));
+    } else {
+        return [];
+    }
+}
 
     const itemEvents = (event) => {
         setinputList(event.target.value);
@@ -72,26 +71,13 @@ function Todo() {
 
 
     const checkBox = () => {
-
-        // const defaultt = document.getElementById('scratch').style.textDecoration = "none";
-        // if (defaultt === "none") {
-        // document.getElementById('scratch').style.textDecoration = "line-through";
-        // } else {
-        // document.getElementById('scratch').style.textDecoration = "none";
-        // }
-
-
+        
         const defaultt = document.getElementById('check');
         if (defaultt.click) {
             document.getElementById('scratch').style.textDecoration = "line-through";
         }else{
             document.getElementById('scratch').style.textDecoration = "underline";
         }
-        
-       
-
-
-
     }
 
     const DeleteList = (id) => {
