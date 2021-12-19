@@ -94,9 +94,9 @@ function Todo() {
 
     }
 
-    const deletee = (id) => {
-        const updatedItems=items.filter((elem,ind)=>{
-            return ind !== id;
+    const DeleteList = (id) => {
+        const updatedItems=items.filter((elem,del)=>{
+            return del !== id;
             });
             setItems(updatedItems);  
     }
@@ -123,9 +123,9 @@ function Todo() {
             <div className="entry">
                 <ol className='list'>
 
-                    {items.map((itemVal,ind) => {
-                        return <li key={ind}><input type="checkbox" value="" onClick={checkBox} id="check"/>{itemVal}
-                        <span><img src="Images/icon-cross.svg" onClick={()=>deletee(ind)} alt="" /></span>
+                    {items.map((itemVal,del) => {
+                        return <li key={del}><input type="checkbox" value="" onClick={checkBox} id="check"/>{itemVal}
+                        <span><img src="Images/icon-cross.svg" alt="Close" onClick={()=>DeleteList(del)} /></span>
                         </li>
                     })}
                                       
