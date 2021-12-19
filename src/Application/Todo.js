@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Sun from './Images/icon-sun.svg';
-import Moon from './Images/icon-moon.svg';
-import Dark from './Images/bg-desktop-dark.jpg'
+import Sun from './icon-sun.svg';
+import Moon from './icon-moon.svg';
+import Dark from './bg-desktop-dark.jpg'
 import './Header.css';
 
 const getLocalItems = () => {
@@ -26,19 +26,19 @@ function Todo() {
     const Theme = () => {
 
         var image = document.getElementById('Backgroundchange');
-        if (image.src.match("Images/bg-desktop-light")) {
-            image.src = "Images/bg-desktop-dark.jpg";
+        if (image.src.match("images/bg-desktop-light")) {
+            image.src = "images/bg-desktop-dark.jpg";
         }
         else {
-            image.src = "Images/bg-desktop-light.jpg";
+            image.src = "images/bg-desktop-light.jpg";
         }
 
         var image = document.getElementById('themechange');
-        if (image.src.match("Images/icon-sun")) {
-            image.src = "Images/icon-moon.svg";
+        if (image.src.match("images/icon-sun")) {
+            image.src = "images/icon-moon.svg";
         }
         else {
-            image.src = "Images/icon-sun.svg";
+            image.src = "images/icon-sun.svg";
         }
 
         if (document.body.style.background === "black") {
@@ -125,7 +125,7 @@ function Todo() {
 
                     {items.map((itemVal,del) => {
                         return <li key={del}><input type="checkbox" value="" onClick={checkBox} id="check"/>{itemVal}
-                        <span><img src="Images/icon-cross.svg" alt="Close" onClick={()=>DeleteList(del)} /></span>
+                        <span><img src="images/icon-cross.svg" alt="Close" onClick={()=>DeleteList(del)} /></span>
                         </li>
                     })}
                                       
